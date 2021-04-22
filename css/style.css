@@ -1,45 +1,116 @@
 * {
     margin: 0%;       
     padding: 0%;
-    
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 header{
+    text-align: center;
     background-color: rgb(4, 133, 57);
     border: 1px solid black;
 }
 .logo{
-    width: 10%;
+    width: 8%;
     margin-right: 10px;
-    padding: 0px;
+    padding: 3px;
     border: 1px solid rgb(0, 0, 0);
-    
+       
 }
 body{
     
-    background-color: rgb(255, 255, 255);
-    border: solid blue;
+    background-color: rgb(65, 25, 69);
+    border: solid rgb(7, 7, 7);
 }
 
-.img1{
-    max-width: 20%;
+#canasta{
+    margin-right: 2px;
+    width: 110px;
+    max-width: 100%; 
+    text-align: center;  
     float: left;
-    padding:20px ;    
-}
-.img2{
     
-    width: 5%;
-    margin-left: 2px;
-    float: left;
-}
-.parrafo{
+} 
+
+.banner{
+    width: 100%;
+    margin: auto;
     text-align: center;
+ 
+       
 }
-h2{background-color: lightcoral;
-    width: 50%;
+.banner figure .capa{
+    
+    margin-top: 10px;
+    top: 0;
+    align-items: center;
+    width: 100%;
+    
     text-align: center;
+    color: rgb(255, 255, 255); 
+    position: absolute;    
 }
+.banner figure{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    
+       
+}
+.banner figure img{
+    width: 100%;
+    height:  189px;
+    right: 100%;
+    margin: auto;
+    
+    background-image: url(../img/Verduleria.jpeg);
+    opacity: 0.8;  
+}
+.row{
+    text-align: center;
+    
+    
+    
+}
+
 .img-carrousel{
+    background-color: rgb(173, 240, 240);
+    align-items: center;
     width: 40%;
     margin: auto;
+    margin-bottom: 90px;
 
+}
+.boton{
+    background-position-x: center;
+    text-align: center;
+    padding: 15px 10px;
+    align-items: center;
+    background-color: rgb(245, 108, 10);
+}
+.card {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;    
+    margin-top: 30px;    
+    padding: 40px;
+    border: solid 2px rgb(10, 153, 53) ;
+    float: left;
+    
+}
+.row footer{
+    padding-top: 35px;
+    min-height: 70px;
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(163, 96, 250);
+}
+.reparto{
+    color: ghostwhite;
+}
+.localidad{
+    color: greenyellow;
+}
+.loca_reparto{
+    width: 60%;
+    margin-bottom: 40px;
+    margin-top: 20px;
 }
