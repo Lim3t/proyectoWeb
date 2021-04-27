@@ -17,7 +17,7 @@ header{
 }
 body{
     
-    background-color: rgb(65, 25, 69);
+    background-color: rgb(109, 15, 148);
     border: solid rgb(7, 7, 7);
 }
 
@@ -72,19 +72,23 @@ body{
 }
 
 .img-carrousel{
-    background-color: rgb(173, 240, 240);
+    background-color: rgb(254, 246, 253);
     align-items: center;
-    width: 40%;
+    width: 30%;
+    padding: 30px;
     margin: auto;
     margin-bottom: 90px;
+    border-radius: 15px;
+    border: solid 2px black;
 
 }
-.boton{
+div.center{
+    margin-bottom: 15px;
     background-position-x: center;
     text-align: center;
     padding: 15px 10px;
     align-items: center;
-    background-color: rgb(245, 108, 10);
+    
 }
 .card {
     align-items: center;
@@ -92,16 +96,17 @@ body{
     margin-right: auto;    
     margin-top: 30px;    
     padding: 40px;
-    border: solid 2px rgb(10, 153, 53) ;
+    border: solid 2px rgb(4, 133, 57) ;
     float: left;
     
 }
 .row footer{
+    color: rgb(255, 255, 255);
     padding-top: 35px;
     min-height: 70px;
     width: 100%;
     bottom: 0;
-    background-color: rgb(163, 96, 250);
+    background-color: rgb(138, 54, 247);
 }
 .reparto{
     color: ghostwhite;
@@ -113,4 +118,39 @@ body{
     width: 60%;
     margin-bottom: 40px;
     margin-top: 20px;
+    border-radius: 15px;
+    border: solid 2px black;
+}
+.sesion{
+    padding: 5%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.login{
+    align-items: center;
+    color: rgb(255, 255, 255);
+    padding: 2%;
+    align-content: center;
+    background-color: rgb(4, 133, 57);
+    width: 80%;
+    margin-left: 10%;
+    border: solid 2px black;
+    border-radius: 10px;
+    margin-bottom: 10%;
+     
+    
+}
+.ingresar{
+    text-align: center;
+}
+
+.contacto{
+    padding: auto;
+    color: rgb(255, 255, 255);
+    border: solid 2px black;
+    background-color: rgb(4, 133, 57);
+}
+#registro{
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
