@@ -122,7 +122,7 @@ div.center{
     border: solid 2px black;
 }
 .sesion{
-    padding: 5%;
+    padding: 3%;
     text-align: center;
     color: rgb(255, 255, 255);
 }
@@ -153,4 +153,47 @@ div.center{
 #registro{
     color: rgb(255, 255, 255);
     text-align: center;
+}
+#comentarioHelp{
+    color: rgb(35, 247, 16);
+}
+.sobre_nosotros{
+    width: 100%; 
+    background-color: rgb(80, 80, 57);
+    border: solid 2px black;
+
+
+}
+.parrafo{
+    color: white;
+    width: 91%;
+    text-align: center;
+    
+    max-width: 70%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+.Snosotros{
+    background-color: rgb(40, 54, 208);
+    max-width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: auto;
+    
+    
+}
+.Titulo{
+    text-align: center;
+    color: white;
+
+}
+.lista{
+    align-items: center;
+    width: 70%;
+    margin-left: 20%;
+    color: white;
+    border: solid 2px black;
+    border-radius:  20px;
+    margin-bottom: 5%;
+    margin-top: 10px;
 }
