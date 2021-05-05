@@ -56,11 +56,22 @@
                 
             </div>     
             <div class="container-fluid">
-                <div style="text-align: center;">    
-                    
+                <div style="text-align: center;">                      
+                </div>
+                <div class="row clima">
+                    <div>
+                        <span>El Clima de Hoy es:</span>
+                        <span id="clima"></span>
+                    </div>
+                    <div>
+                        <span>Y la Temperatura es: </span>
+                        <span id="temperatura"></span>
+                    </div>
                 </div>
                 <div class="center">
                     <a href="productos.html" class="btn btn-outline-success">Nuestros Productos</a>
+                </div>
+                
                 </div>
                 <div class="row carrouse">
                      
@@ -82,17 +93,33 @@
                
         </div>
                           
-                <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js " integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin=" anonymous "></script>   
-                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js " integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin=" anonymous "></script>!-->
+    <script src="js/main.js"></script>
+    <script src="js/query-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $.get("https://api.gael.cloud/general/public/clima/SCQN",
+                function(data) {
+                    console.log(JSON.stringify(data));
+                    console.log("Estado del clima" + data.Estado);
+                    $("#temperaturaClima").text(data.Temp);
+                    $("#estadoClima").text(data.Estado);
+                    $("#clima").text(data.Estado)
+                    $("#temperatura").text(data.Temp)
+                })
+        });
+    </script>
     </body>
 
-    <div class="row footer">
-        <footer class="row">
-            <h5 class="text-uppercase">este es nuestro contenido del footer</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla at ipsam dolorem blanditiis ut vel, itaque eaque quo voluptatem vitae dolorum provident numquam sequi tempore eius molestias fuga minus explicabo?</p>   
-        </footer>
-    </div>
-
-
+        <div class="row footer">
+            <footer class="row">
+                <h5 class="text-uppercase">este es nuestro contenido del footer</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla at ipsam dolorem blanditiis ut vel, itaque eaque quo voluptatem vitae dolorum provident numquam sequi tempore eius molestias fuga minus explicabo?</p>   
+            </footer>
+        </div>
 </html>
+
+
+

@@ -1,0 +1,8 @@
+###Obtiene todas las Aplicaciones###
+ GET  https://api.gael.cloud/general/public/clima
+
+
+ ###Obtiene una sola publicacion
+
+ GET  https://api.gael.cloud/general/public/clima
+ 

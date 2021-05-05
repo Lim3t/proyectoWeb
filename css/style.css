@@ -101,6 +101,7 @@ div.center{
     
 }
 .row footer{
+    margin-top: 30px;
     color: rgb(255, 255, 255);
     padding-top: 35px;
     min-height: 70px;
@@ -196,4 +197,16 @@ div.center{
     border-radius:  20px;
     margin-bottom: 5%;
     margin-top: 10px;
+}
+.clima{
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    width: 30%;
+    margin: auto;
+    max-width: 30%;
+    color: rgb(10, 10, 10);
+    border: solid 2px black;
+    border-radius: 10px;
+    background-color: tomato;
 }
